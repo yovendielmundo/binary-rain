@@ -1,0 +1,25 @@
+{
+  "name": "binary-rain",
+  "version": "1.0.0",
+  "description": "Simple html5 recreation of the digital rain sequence from the Matrix",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yovendielmundo/binary-rain.git"
+  },
+  "keywords": [
+    "html5",
+    "javascript",
+    "node-js",
+    "p5-js"
+  ],
+  "author": "Luis Miguel Osorio Castrillon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yovendielmundo/binary-rain/issues"
+  },
+  "homepage": "https://github.com/yovendielmundo/binary-rain#readme"
+}
