@@ -4,6 +4,7 @@
   "description": "Simple html5 recreation of the digital rain sequence from the Matrix",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "test"
   },
   "repository": {
