@@ -1,19 +1,18 @@
 import Symbol from './symbol'
 
 export default class Stream {
-    constructor(x, y, symbolSize, symbolColor) {
-        this.totalSymbols = round(random(5, 35))
-        this.speed = random(1, 5)
-        //this.speed = random(5, 22)
-        this.symbols = Array(new Symbol(x, y, this.speed, symbolColor.bright))
+    constructor(x, y, symbolSize, symbolColors) {
+        this.totalSymbols = round(random(6, 42))
+        this.speed = random(2, 20)
+        this.symbols = Array(new Symbol(x, y, this.speed, this.chooseColor(symbolColors)))
         y -= symbolSize
 
         let opacity = 255
-        let fadeInterval = 1.6
+        let fadeInterval = 1.8
 
         for (let i = 1; i < this.totalSymbols; i++) {
             this.symbols.push(
-                new Symbol(x, y, this.speed, symbolColor.normal.concat(opacity))
+                new Symbol(x, y, this.speed, symbolColors.normal.concat(opacity))
             )
             opacity -= (255 / this.totalSymbols) / fadeInterval
             y -= symbolSize
@@ -25,5 +24,9 @@ export default class Stream {
             symbol.draw()
             symbol.update()
         })
+    }
+
+    chooseColor(symbolColors) {
+        return (round(random(0, 4)) == 0) ? symbolColors.bright : symbolColors.normal
     }
 }
