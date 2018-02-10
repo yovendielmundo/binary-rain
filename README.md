@@ -1,5 +1,5 @@
 # Binary rain
-Simple html5 recreation of the digital rain sequence from the Matrix binary representation 
+Simple html5 recreation of the digital rain sequence from the Matrix binary code 
 
 ![alt tag](binary_rain.png)
 
