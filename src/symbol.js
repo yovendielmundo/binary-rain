@@ -4,7 +4,7 @@ export default class Symbol {
         this.y = y
         this.speed = speed
         this.color = color
-        this.interval = round(random(2, 25))
+        this.interval = round(random(2, speed))
         this.setRandomValue()
     }
 
